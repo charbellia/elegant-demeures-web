@@ -54,8 +54,8 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <div className="font-playfair text-xl md:text-2xl font-bold">
-            <span>Élégant</span>
-            <span className="text-accent"> Demeures</span>
+            <span>Unibormapra</span>
+            <span className="text-accent"></span>
           </div>
         </Link>
 
