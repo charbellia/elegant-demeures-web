@@ -46,10 +46,8 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-md py-3' 
-          : 'bg-transparent py-5'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white shadow-md ${
+        isScrolled ? 'py-3' : 'py-5'
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
@@ -93,7 +91,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-md animate-fade-in">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-3">
             {navLinks.map((link) => (
               <Link 
